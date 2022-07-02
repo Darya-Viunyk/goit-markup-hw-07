@@ -24,33 +24,33 @@
   </head>
   <body class="body">
     <header class="header">
-      <div class="main-box container">
-        <nav class="main-nav">
-          <a class="logo-header" href=""><span class="logo-span">Web</span>Studio</a>
+      <div class="header__box container">
+        <nav class="nav">
+          <a class="nav__logo" href=""><span class="nav__span">Web</span>Studio</a>
 
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link control">Студия</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__control">Студия</a>
             </li>
-            <li class="item">
-              <a href="" class="link control current">Портфолио</a>
+            <li class="nav__item">
+              <a href="" class="nav__control current">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link control">Контакты</a></li>
+            <li class="nav__item"><a href="" class="nav__control">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
-          <li class="item">
-            <a href="mail:info@devstudio.com" class="contacts">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mail:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="item">
-            <a href="tel:+38096111111" class="contacts">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+38096111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -60,201 +60,209 @@
       </div>
     </header>
     <main>
-      <section class="section-portfolio section">
+      <section class="portfolio section">
         <!-- <h1>Портфолио</h1> -->
         <div class="container">
-          <ul class="list portfolio-title">
-            <li class="portfolio-button">
-              <button type="button" class="butoon-secondary active-btn">Все</button>
+          <ul class="navigation list">
+            <li class="navigation__list">
+              <button type="button" class="navigation__butoon active-btn">Все</button>
             </li>
-            <li class="portfolio-button">
-              <button type="button" class="butoon-secondary">Веб-сайты</button>
+            <li class="navigation__list">
+              <button type="button" class="navigation__butoon">Веб-сайты</button>
             </li>
-            <li class="portfolio-button">
-              <button type="button" class="butoon-secondary">Приложения</button>
+            <li class="navigation__list">
+              <button type="button" class="navigation__butoon">Приложения</button>
             </li>
-            <li class="portfolio-button">
-              <button type="button" class="butoon-secondary">Дизайн</button>
+            <li class="navigation__list">
+              <button type="button" class="navigation__butoon">Дизайн</button>
             </li>
-            <li class="portfolio-button">
-              <button type="button" class="butoon-secondary">Маркетинг</button>
+            <li class="navigation__list">
+              <button type="button" class="navigation__butoon">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list text-container">
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+          <ul class="portfolio__item list">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
                     src="./images/portfolio1.jpg"
                     alt="Создание веб-сайтов"
                     width="370"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Технокряк</h2>
-                  <p class="portfolio-about">Веб-сайт</p>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Технокряк</h2>
+                  <p class="portfolio__about">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
                     src="./images/portfolio2.jpg"
                     alt="Дизайн постеров"
                     width="370"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">
                     Постер <span lang="en"> New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-about">Веб-сайт</p>
+                  <p class="portfolio__about">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
                     src="./images/portfolio3.jpg"
                     alt="Создание логотипов"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portfolio-about">Приложение</p>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="portfolio__about">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
                     src="./images/portfolio4.jpg"
                     alt="Маркетинг проэктов"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Приложение</h2>
-                  <p class="portfolio-about">Маркетинг</p>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Приложение</h2>
+                  <p class="portfolio__about">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
-                  <img class="foto-product" src="./images/portfolio5.jpg" alt="Дизайн продуктов" />
-                  <p class="expanding-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portfolio-about">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
+                    src="./images/portfolio5.jpg"
+                    alt="Дизайн продуктов"
+                  />
+                  <p class="portfolio__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Проект <span lang="en">Boxes</span></h2>
+                  <p class="portfolio__about">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
+                  <img
+                    class="portfolio__foto"
                     src="./images/portfolio6.jpg"
                     alt="Подержка веб-сайтов"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 lang="en" class="portfolio-name">Inspiration has no Borders</h2>
-                  <p class="portfolio-about">Веб-сайт</p>
+                <div class="portfolio__wrap">
+                  <h2 lang="en" class="portfolio__name">Inspiration has no Borders</h2>
+                  <p class="portfolio__about">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
-                  <img class="foto-product" src="./images/portfolio7.jpg" alt="Дизайе каталогов" />
-                  <p class="expanding-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Издание <span lang="en"> Limited Edition</span></h2>
-                  <p class="portfolio-about">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
+                    src="./images/portfolio7.jpg"
+                    alt="Дизайе каталогов"
+                  />
+                  <p class="portfolio__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Издание <span lang="en"> Limited Edition</span></h2>
+                  <p class="portfolio__about">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
+                  <img
+                    class="portfolio__foto"
                     src="./images/portfolio8.jpg"
                     alt="Маркетинг проэктов"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 class="portfolio-name">Проект LAB</h2>
-                  <p class="portfolio-about">Маркетинг</p>
+                <div class="portfolio__wrap">
+                  <h2 class="portfolio__name">Проект LAB</h2>
+                  <p class="portfolio__about">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="cart-product">
-              <a href="" class="expanding-product">
-                <div class="expanding-foto">
+            <li class="portfolio__list">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__cart">
                   <img
-                    class="foto-product"
+                    class="portfolio__foto"
                     src="./images/portfolio9.jpg"
                     alt="Приложения для ноутбука"
                   />
-                  <p class="expanding-text">
+                  <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="product-box">
-                  <h2 lang="en" class="portfolio-name">Growing Business</h2>
-                  <p class="portfolio-about">Приложение</p>
+                <div class="portfolio__wrap">
+                  <h2 lang="en" class="portfolio__name">Growing Business</h2>
+                  <p class="portfolio__about">Приложение</p>
                 </div>
               </a>
             </li>
@@ -263,49 +271,49 @@
       </section>
     </main>
     <footer class="fooret">
-      <div class="big-box container">
-        <div class="footer-box conta">
-          <a href="/" class="logo-footer"> <span class="logo-span">Web</span>Studio </a>
+      <div class="fooret__container container">
+        <div class="footer__box">
+          <a href="/" class="footer__link"> <span class="footer__span">Web</span>Studio </a>
 
-          <address>
-            <ul class="list">
-              <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
+          <address class="address">
+            <ul class="address__item list">
+              <li class="address__list">г. Киев, пр-т Леси Украинки, 26</li>
               <li>
-                <a href="mail:info@devstudio.com" class="address-contacts"> info@devstudio.com </a>
+                <a href="mail:info@devstudio.com" class="address__link"> info@devstudio.com </a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="address-contacts"> +38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="address__link"> +38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-networks">
-          <strong class="strong-text">присоединяйтесь</strong>
-          <ul class="link-item list">
-            <li class="link-icon">
-              <a href="" class="link-team">
-                <svg class="my-networks" width="20" height="20">
+        <div class="call">
+          <strong class="call__strong">присоединяйтесь</strong>
+          <ul class="networks list">
+            <li class="networks__list">
+              <a href="" class="networks__link call__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
-            <li class="link-icon">
-              <a href="" class="link-team">
-                <svg class="my-networks" width="20" height="20">
+            <li class="networks__list">
+              <a href="" class="networks__link call__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-twit"></use>
                 </svg>
               </a>
             </li>
-            <li class="link-icon">
-              <a href="" class="link-team">
-                <svg class="my-networks" width="20" height="20">
+            <li class="networks__list">
+              <a href="" class="networks__link call__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-fac"></use>
                 </svg>
               </a>
             </li>
-            <li class="link-icon">
-              <a href="" class="link-team">
-                <svg class="my-networks" width="20" height="20">
+            <li class="networks__list">
+              <a href="" class="networks__link call__link">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-link"></use>
                 </svg>
               </a>
@@ -313,22 +321,24 @@
           </ul>
         </div>
         <div class="subscribe">
-          <strong class="strong-subscribe">Подпишитесь на рассылку</strong>
-          <label class="modal-label" for="user-email"></label>
-          <input
-            tape="email"
-            name="user-email"
-            class="modal-subscribe"
-            placeholder="E-mail"
-            required
-            id="user-email"
-          />
-          <button class="subscribe-button">
-            Подписаться
-            <svg class="my-networks" width="20" height="20">
-              <use href="./images/icons.svg.svg#icon-link"></use>
-            </svg>
-          </button>
+          <strong class="subscribe__strong">Подпишитесь на рассылку</strong>
+          <div class="subscribe__box">
+            <label class="subscribe__label" for="user-email"></label>
+            <input
+              tape="email"
+              name="user-email"
+              class="subscribe__input"
+              placeholder="E-mail"
+              required
+              id="user-email"
+            />
+            <button class="subscribe__button">
+              Подписаться
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg.svg#icon-icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
