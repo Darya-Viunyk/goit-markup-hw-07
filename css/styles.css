@@ -523,15 +523,14 @@ button {
 .clients__icon {
   fill: currentColor;
 }
-/* ////////////   что то отвалилось ////////////   */
-.ection-title {
+
+.team {
   background-color: #f5f4fa;
 }
 
-.feature-list .title {
+.benefits-list .benefits__title {
   color: var(--title-text-color);
 }
-/*    что то отвалилось    */
 
 /*portfolio*/
 /*navigation*/
@@ -544,13 +543,7 @@ button {
   margin-right: auto;
   margin-bottom: 50px;
 }
-/*/////// неизвестная кнопка///*/
-.picture-button {
-  background: rgba(47, 48, 58, 0.8);
-  color: var(--second-accent-color);
-  border: transparent;
-}
-/*///////*/
+
 .navigation__list:not(:last-child) {
   margin-right: 8px;
 }
@@ -740,19 +733,22 @@ button {
 }
 
 .subscribe__input {
+  padding: 15px 16px;
   background-color: transparent;
   width: 358px;
   height: 50px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-.subscribe__input::placeholder {
-  padding-left: 16px;
-  font-weight: 400;
+  color: var(--second-accent-color);
+
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  outline: transparent;
+}
+.subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__button {
@@ -842,12 +838,12 @@ button {
   margin-bottom: 12px;
 }
 .form__name {
-  font-weight: 400;
+  display: block;
   font-size: 12px;
   line-height: 1.17;
-
+  margin-bottom: 10px;
   letter-spacing: 0.01em;
-
+  position: relative;
   color: #757575;
 }
 .form__wrap {
@@ -873,7 +869,7 @@ button {
 .form__input:focus {
   border-color: var(--accent-color);
 }
-.form__input:focus + icon-wrap {
+.form__input:focus + .form__icon {
   fill: var(--accent-color);
 }
 
@@ -884,9 +880,9 @@ button {
 
   position: absolute;
   left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 11px;
 }
+
 .form__textarea {
   width: 100%;
   height: 120px;
@@ -895,14 +891,22 @@ button {
   resize: none;
   padding: 12px 16px;
   margin-top: 4px;
+  outline: none;
+}
+.form__textarea:focus {
+  border-color: var(--accent-color);
 }
 /*checkbox*/
 .checkbox {
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
+  margin-top: 20px;
+  margin-bottom: 30px;
   color: #757575;
 }
 .option {
@@ -920,47 +924,28 @@ button {
   position: absolute;
 }
 
-.checkbox__input {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.checkbox__input:checked + .checkbox__span {
+  background-color: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+.checkbox__input:checked + .checkbox__span .checkbox__icon {
+  background-color: var(--accent-color);
 
-  background-image: url(../images/icons.svg.svg#icon-vector);
+  opacity: 1;
 }
-.checkbox__input:checked + .checkbox__input {
-  background-image: url(../images/icons.svg.svg#icon-heck);
-}
+
 .checkbox__icon {
   position: absolute;
   margin-top: 20px;
   left: 0;
   top: 100%;
   transform: translateY(-100%);
+  opacity: 0;
 }
 .checkbox a {
   color: var(--accent-color);
 }
-/*/////////что то выпало///////*/
-.modal-coment {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 100%;
-  height: 120px;
-  background-color: transparent;
-  margin-bottom: 20px;
-  margin-top: 4px;
-  padding-left: 16px;
-}
-.modal-coment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
-/*///////////////////////////////////////*/
 .checkbox__btn {
   display: block;
   margin: 0 auto;
