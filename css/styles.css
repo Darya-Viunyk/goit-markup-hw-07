@@ -462,8 +462,8 @@ button {
 .networks__icon {
   fill: currentColor;
 }
-.networks__icon:hover,
-.networks__icon:focus {
+.networks__link:hover,
+.networks__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -898,6 +898,7 @@ button {
 }
 /*checkbox*/
 .checkbox {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -909,10 +910,6 @@ button {
   margin-bottom: 30px;
   color: #757575;
 }
-.option {
-  display: block;
-  position: relative;
-}
 
 .checkbox__wrap {
   position: absolute;
@@ -921,16 +918,10 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: absolute;
 }
+
 .checkbox__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 8px;
-  outline: 2px solid var(--title-text-color);
-  outline-offset: -2px;
-  border-radius: 2px;
+  opacity: 0;
 }
 .checkbox__input:checked + .checkbox__span {
   background-color: var(--accent-color);
@@ -941,16 +932,19 @@ button {
 
   opacity: 1;
 }
-
-.checkbox__icon {
-  display: block;
-
+.checkbox__span {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
   position: absolute;
-  margin-top: 20px;
   left: 0;
-  top: 100%;
-  transform: translateY(-100%);
-  opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  outline: 3px solid var(--title-text-color);
+  outline-offset: -2px;
+  border-radius: 2px;
 }
 .checkbox a {
   color: var(--accent-color);
