@@ -1,0 +1,13 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  
+  .navigation__list:not(:last-child) {
+    margin-right: 8px;
+  }

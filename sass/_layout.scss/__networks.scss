@@ -1,0 +1,18 @@
+.networks__list > .call__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--second-accent-color);
+  }
+  .call__link:hover,
+  .call__link:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .call__strong {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--second-accent-color);
+  }

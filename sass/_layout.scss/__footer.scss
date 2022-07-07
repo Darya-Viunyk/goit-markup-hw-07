@@ -1,0 +1,27 @@
+.fooret {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .fooret__container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__box {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+  .footer__link {
+    display: block;
+    color: var(--second-accent-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .footer__span {
+    color: var(--accent-color);
+  }
