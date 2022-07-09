@@ -1,31 +1,31 @@
-@import "./base";
-@import "./_base.scss/reset";
-@import "./_base.scss/base";
-@import "./_base.scss/_button";
 
-@import "./_layout.scss/";
-@import "./_layout.scss/_header";
-@import "./_layout.scss/_nav";
-@import "./_layout.scss/_footer";
-@import "./_layout.scss/_address";
-@import "./_layout.scss/_networks";
-@import "./_layout.scss/_subscribe";
-
-@import "./_components.scss/";
-@import "./_components.scss/header";
-@import "./_components.scss/nav";
-@import "./_components.scss/_contacts";
-@import "./_components.scss/_hero";
-@import "./_components.scss/_benefits";
-@import "./_components.scss/_activity";
-@import "./_components.scss/_team";
-@import "./_components.scss/_networks";
-@import "./_components.scss/_clients";
-@import "./_components.scss/_navigation";
-@import "./_components.scss/_portfolio";
-@import "./_components.scss/_modal";
+@import "./base/button";
+@import "./base/reset";
+@import "./base/base";
 
 
+@import "./layout/address";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/networks";
+@import "./layout/subscribe";
 
-@import "./_utils.scss/";
-@import "./_utils.scss/pleceholders";
+
+@import "./components/header";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/networks";
+@import "./components/clients";
+@import "./components/navigation";
+@import "./components/portfolio";
+@import "./components/modal";
+
+
+
+
+@import "./utils/pleceholders";
